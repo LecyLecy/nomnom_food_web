@@ -1,0 +1,90 @@
+<div class="header">
+  <div class="page-title" id="page-title">Dashboard</div>
+
+  
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <img src="assets/search.svg" alt="Search" class="search-icon" />
+      <input type="text" id="search-input" placeholder="Search for Food!" />
+    </div>
+  
+    <!-- Suggestion Box -->
+    <div id="search-suggestions" class="suggestion-box hidden">
+      <div class="suggestion-item">
+        <img src="assets/egg.png" alt="Egg" />
+        <span>Egg</span>
+        <button class="close-btn">
+          <img src="assets/X.svg" alt="Close" />
+        </button>        
+      </div>
+    </div>
+  </div>
+  
+  
+    <div class="header-actions">
+      <div class="dropdown-wrapper">
+        <div class="custom-dropdown">
+          <button class="dropdown-toggle">
+            Recent Visit
+            <img src="assets/recent_visit_dropdown.svg" alt="Dropdown Icon" class="dropdown-arrow" />
+          </button>
+          <div class="dropdown-menu hidden">
+            <button data-link="dashboard.html">Dashboard</button>
+            <button data-link="faq.html">FAQ</button>
+            <button data-link="favorite.html">Favorite</button>
+            <button data-link="schedule.html">Schedule</button>
+          </div>
+        </div>
+      </div>
+      
+      <img src="assets/notification.svg" class="icon-btn" alt="Notifications" />
+      <!-- Notification Panel -->
+<div class="notification-panel hidden" id="notification-panel">
+  <h3 class="notif-title">Notifications</h3>
+  <div class="notification-list">
+    <div class="notification-item">
+      <img src="assets/lebron.jpg" class="notif-avatar" alt="Lebron" />
+      <div class="notif-content">
+        <p><strong>Lebron</strong> liked your comment</p>
+        <small>3 hours ago</small>
+      </div>
+    </div>
+    <div class="notification-item">
+      <img src="assets/lebron.jpg" class="notif-avatar" alt="Lebron" />
+      <div class="notif-content">
+        <p><strong>Lebron</strong> replied: Anjay Mabar</p>
+        <small>3 hours ago</small>
+      </div>
+    </div>
+    <div class="notification-item">
+      <img src="assets/lebron.jpg" class="notif-avatar" alt="Lebron" />
+      <div class="notif-content">
+        <p><strong>Lebron</strong> mentioned you in a comment</p>
+        <small>19 years ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="profile-dropdown">
+  <img src="assets/profile_picture.jpg" alt="Profile Picture" class="profile-pic dropdown-trigger" />
+
+  <div class="dropdown-panel hidden">
+    <div class="profile-info">
+      <img src="assets/profile_picture.jpg" alt="Profile" class="profile-pic-large" />
+      <div class="username">Adin</div>
+    </div>
+    <button class="dropdown-option">
+      <img src="assets/Change User.svg" alt="Manage" />
+      <span>Manage Profile</span>
+    </button>
+    <button class="dropdown-option" onclick="location.href='login.html'">
+      <img src="assets/Logout.svg" alt="Logout" />
+      <span>Sign Out</span>
+    </button>    
+  </div>
+</div>
+
+    </div>
+  </div>
+  

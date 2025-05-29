@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive;
+}
+
+.page-wrapper {
+    margin-left: 220px; /* Sidebar width */
+    width: calc(100% - 220px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d4f3c4, #78c2b3);
+}
+
+  .main-content {
+    padding: 40px;
+    /* optional: add max-width, center, etc. */
+  }
+  
+  
