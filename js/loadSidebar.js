@@ -14,6 +14,7 @@ fetch("layout/navigation.html")
         item.classList.add("active");
       }
     });
+    
   });
 
 // Load header
@@ -117,6 +118,33 @@ if (profileTrigger && profileDropdown) {
     }
   });
 }
+
+// Handle all suggestion clicks (via delegation)
+if (suggestions) {
+  suggestions.addEventListener("click", (e) => {
+    if (e.target.closest(".close-btn")) {
+      suggestions.classList.add("hidden");
+      return;
+    }
+
+    const item = e.target.closest(".suggestion-item");
+    if (item && item.dataset.item) {
+      window.location.href = `food.html?item=${item.dataset.item}`;
+    }
+  });
+}
+
+if (input) {
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const query = input.value.trim().toLowerCase();
+      if (query) {
+        window.location.href = `food.html?item=${query}`;
+      }
+    }
+  });
+}
+
 
 
   });

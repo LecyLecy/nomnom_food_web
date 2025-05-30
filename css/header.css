@@ -358,3 +358,34 @@
   height: 20px;
 }
 
+.suggestion-item {
+  cursor: pointer;
+}
+
+.page-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.back-button img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover img {
+  transform: translateX(-2px); /* slight movement on hover */
+}
+

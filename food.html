@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/navigation.css" />
-  
 </head>
 <body>
 
@@ -17,87 +16,79 @@
   <div class="page-wrapper">
     <div id="header-placeholder"></div>
     <div class="main-content">
-        
-        <div class="main-content">
-            <div class="food-page">
-              <!-- LEFT COLUMN -->
-              <div class="left-column">
-                <h1 id="food-title">Food Name</h1>
-                <div class="food-tags" id="food-tags"></div>
-          
-                <!-- New Description/Ingredients/Benefits Section -->
-                <div class="food-details">
-                    <div class="food-details-section">
-                      <h2>About This Food</h2>
-                      <p class="food-description">
-                        A delicious and simple meal to start your day with energy and taste.
-                      </p>
-                    </div>
-                  
-                    <div class="food-details-section">
-                      <h3>Ingredients</h3>
-                      <ul class="food-ingredients">
-                        <li>1 Egg</li>
-                        <li>Pinch of salt</li>
-                        <li>Cooking oil</li>
-                      </ul>
-                    </div>
-                  
-                    <div class="food-details-section">
-                      <h3>Benefits</h3>
-                      <ul id="food-benefits">
-                        <!-- dynamically filled by JS -->
-                      </ul>
-                    </div>
-                  </div>
-                  
-          
-                <!-- Discussion Section -->
-                <div class="discussion-section">
-                  <h2>Discussion</h2>
-                  <div class="comment-input">
-                    <img src="assets/profile_picture.jpg" alt="User" class="comment-avatar" />
-                    <input type="text" placeholder="Give your opinion..." id="comment-field" />
-                    <button id="post-comment">POST</button>
-                  </div>
-                  <div class="comment-list" id="comment-list">
-                    <!-- dynamically filled from JS -->
-                  </div>
-                </div>
-              </div>
-          
-              <!-- RIGHT COLUMN -->
-              <div class="right-column">
-                <div class="image-wrapper">
-                  <img id="food-image" src="assets/egg.png" class="food-image" alt="Food" />
-                </div>
-          
-                <div class="food-meta">
-                  <img id="fav-icon" src="assets/heart.svg" class="fav-icon" alt="Favorite" />
-          
-                  <div class="meta-info">
-                    <img src="assets/clock.svg" alt="Time Icon" />
-                    <span id="food-time">10 mins</span>
-                  </div>
-          
-                  <div class="meta-info">
-                    <img src="assets/fire.svg" class="icon-fire" alt="Calorie Icon" />
-                    <span id="food-calories">155 cal</span>
-                  </div>
-                </div>
-          
-                <div class="store-section">
-                  <p>Want to see the nearest store of this food?</p>
-                  <p>Click the store icon to see</p>
-                  <a id="store-link" target="_blank">
-                    <img src="assets/Shop.svg" alt="Store" class="store-icon" />
-                  </a>
-                </div>
-              </div>
+      <div class="food-page">
+        <!-- LEFT COLUMN -->
+        <div class="left-column">
+          <h1 id="food-title">Food Name</h1>
+          <div class="food-tags" id="food-tags"></div>
+
+          <!-- Info Sections -->
+          <div class="food-details">
+            <div class="food-details-section">
+              <h2>About This Food</h2>
+              <p class="food-description">
+                A delicious and simple meal to start your day with energy and taste.
+              </p>
+            </div>
+
+            <div class="food-details-section">
+              <h3>Ingredients</h3>
+              <ul class="food-ingredients">
+                <!-- injected dynamically -->
+              </ul>
+            </div>
+
+            <div class="food-details-section">
+              <h3>Benefits</h3>
+              <ul id="food-benefits">
+                <!-- injected dynamically -->
+              </ul>
             </div>
           </div>
-          
-          
+
+          <!-- Discussion -->
+          <div class="discussion-section">
+            <h2>Discussion</h2>
+            <div class="comment-input">
+              <img src="assets/profile_picture.jpg" alt="User" class="comment-avatar" />
+              <input type="text" placeholder="Give your opinion..." id="comment-field" />
+              <button id="post-comment">POST</button>
+            </div>
+            <div class="comment-list" id="comment-list">
+              <!-- comments injected by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+          <div class="image-wrapper">
+            <img id="food-image" src="assets/egg.png" class="food-image" alt="Food" />
+          </div>
+
+          <div class="food-meta">
+            <img id="fav-icon" src="assets/heart.svg" class="fav-icon" alt="Favorite" />
+
+            <div class="meta-info">
+              <img src="assets/clock.svg" alt="Time Icon" />
+              <span id="food-time">10 mins</span>
+            </div>
+
+            <div class="meta-info">
+              <img src="assets/fire.svg" class="icon-fire" alt="Calorie Icon" />
+              <span id="food-calories">155 cal</span>
+            </div>
+          </div>
+
+          <div class="store-section">
+            <p>Want to see the nearest store of this food?</p>
+            <p>Click the store icon to see</p>
+            <a id="store-link" target="_blank">
+              <img src="assets/Shop.svg" alt="Store" class="store-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

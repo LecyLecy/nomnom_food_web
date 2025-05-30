@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NomNom - Favorite</title>
-  <link rel="stylesheet" href="css/favorite.css" />
+  <title>NomNom - Explore</title>
+  <link rel="stylesheet" href="css/explore.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/navigation.css" />
+  
 </head>
 <body>
 
@@ -16,13 +17,19 @@
   <div class="page-wrapper">
     <div id="header-placeholder"></div>
     <div class="main-content">
-      <div id="favorite-grid" class="food-grid">
-        <!-- Favorite food cards will be inserted here -->
+      <div class="explore-container">
+        <aside class="category-sidebar" id="category-list">
+          <!-- Category cards injected by JS -->
+        </aside>
+    
+        <main class="food-grid" id="food-grid">
+          <!-- Food cards injected by JS -->
+        </main>
       </div>
     </div>
   </div>
 
   <script src="js/loadSidebar.js"></script>
-  <script src="js/favorite.js"></script>
+  <script src="js/explore.js"></script>
 </body>
 </html>

@@ -1,6 +1,10 @@
 <div class="header">
-  <div class="page-title" id="page-title">Dashboard</div>
-
+  <div class="page-title-wrapper">
+    <div class="page-title" id="page-title">Food</div>
+    <button class="back-button" onclick="history.back()">
+      <img src="assets/back.svg" alt="Back" />
+    </button>
+  </div>
   
   <div class="search-bar-container">
     <div class="search-bar">
@@ -10,13 +14,13 @@
   
     <!-- Suggestion Box -->
     <div id="search-suggestions" class="suggestion-box hidden">
-      <div class="suggestion-item">
+      <div class="suggestion-item" data-item="egg">
         <img src="assets/egg.png" alt="Egg" />
         <span>Egg</span>
         <button class="close-btn">
           <img src="assets/X.svg" alt="Close" />
         </button>        
-      </div>
+      </div>      
     </div>
   </div>
   
