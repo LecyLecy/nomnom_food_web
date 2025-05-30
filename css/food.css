@@ -1,0 +1,341 @@
+.food-page {
+  display: flex;
+  gap: 24px;
+}
+
+
+/* LEFT COLUMN */
+.left-column {
+  flex: 2;
+  overflow-y: auto;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+#food-title {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Baloo 2', cursive;
+}
+
+.food-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.food-tags span {
+  background: #e5f8e3;
+  color: #38b000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+}
+
+/* DISCUSSION */
+.discussion-section {
+  background-color: #e9ffe7; /* light greenish background */
+  border: 1px solid #d0eacb; /* optional border */
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* soft shadow */
+}
+
+
+.discussion-section h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.comment-input {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #f7f7f7;
+  font-family: 'Baloo 2', cursive;
+}
+
+.comment-input button {
+  background-color: #38b000;
+  color: white;
+  font-weight: bold;
+  font-family: 'Baloo 2', cursive;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.comment-input button:hover {
+  background-color: #2e9000;
+}
+
+/* COMMENT + REPLY */
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.reply {
+  margin-left: 52px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-content p {
+  margin: 0;
+}
+
+.comment-content small {
+  color: #777;
+  font-size: 12px;
+}
+
+/* ACTIONS (Like / Dislike / Reply) */
+.comment-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 14px;
+}
+
+.comment-actions span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.comment-actions img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* REPLY BOX */
+.reply-btn {
+  cursor: pointer;
+  color: #38b000;
+  font-weight: bold;
+}
+
+.reply-box {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 0 52px;
+  align-items: flex-start;
+}
+
+.reply-box input.reply-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f7f7f7;
+  font-family: 'Baloo 2', cursive;
+}
+
+.reply-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.reply-controls button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: 'Baloo 2', cursive;
+  border: none;
+  cursor: pointer;
+}
+
+.reply-controls .post-reply {
+  background-color: #38b000;
+  color: white;
+}
+
+.reply-controls .cancel-reply {
+  background-color: transparent;
+  color: #444;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+  flex: 1;
+  position: sticky;
+  top: 100px; /* adjust to match your header height */
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.image-wrapper {
+  width: 100%;
+  max-width: 300px;       /* Keep it from growing too large */
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  padding: 20px;
+  background: #e9ffe7; /* soft green/white blend */
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* soft drop shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.food-meta {
+  background: #e9ffe7;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Baloo 2', cursive;
+}
+
+.meta-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
+.fav-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.icon-fire {
+  height: 30px !important;
+}
+
+
+.food-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.food-info img {
+  width: 40px; /* atau coba 32px jika ingin lebih besar */
+  height: 20px; /* tambahkan height agar proporsional */
+  margin-right: 8px;
+}
+
+.food-info span {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Baloo 2', cursive;
+}
+
+
+.food-benefits ul {
+  padding-left: 20px;
+  font-family: 'Baloo 2', cursive;
+}
+
+.store-section {
+  background: #e9ffe7;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+}
+
+.store-section .store-icon {
+  width: 30px;
+  margin-top: 8px;
+}
+
+.food-details {
+  background-color: #e9ffe7;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.food-details h2,
+.food-details h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b5d2b;
+  margin-bottom: 8px;
+}
+
+.food-details-section {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #b4deb0;
+}
+
+.food-details-section:last-child {
+  border-bottom: none;
+}
+
+.food-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.food-ingredients,
+#food-benefits {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.food-ingredients li,
+#food-benefits li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #333;
+}
+
