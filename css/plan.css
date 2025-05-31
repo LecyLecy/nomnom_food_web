@@ -1,0 +1,133 @@
+/* Main layout */
+.main-content {
+    padding: 24px;
+  }
+  
+  /* Day selector */
+  .day-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .day-arrow {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  /* Grid layout for 3 meals */
+  .meal-plan-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  /* Card Sizing */
+  .food-card,
+  .add-card {
+    width: 220px; /* smaller width */
+    max-width: 100%;
+  }
+  
+  /* Food Card */
+  .food-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+  
+  .food-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+  
+  .food-card img.food-img {
+    width: 100%;
+    height: 126px; /* maintains 220:126 aspect ratio (roughly 16:9) */
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Food card content */
+  .food-card-content {
+    padding: 10px 14px;
+  }
+  
+  .food-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  
+  .food-description {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .food-tag {
+    background-color: #e7f3ff;
+    color: #1e72c2;
+    padding: 4px 12px;
+    font-size: 13px;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+  
+  
+  /* Trash icon */
+  .trash-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Add Card */
+  .add-card {
+    background-color: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .add-card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .add-card img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+  }
+  

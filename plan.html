@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NomNom - Make a Plan</title>
+  <link rel="stylesheet" href="css/plan.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/navigation.css" />
+</head>
+<body>
+
+  <div id="sidebar-placeholder"></div>
+
+  <div class="page-wrapper">
+    <div id="header-placeholder"></div>
+    <div class="main-content">
+
+      <!-- Day Selector -->
+      <div class="day-selector">
+        <img src="assets/left.svg" id="prev-day" class="day-arrow" alt="Previous Day">
+        <span id="selected-day">Monday</span>
+        <img src="assets/right.svg" id="next-day" class="day-arrow" alt="Next Day">
+      </div>
+
+      <!-- Meal Cards -->
+      <div class="meal-plan-grid" id="plan-grid">
+        <!-- Breakfast / Lunch / Dinner cards will go here -->
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/loadSidebar.js"></script>
+  <script src="js/plan.js"></script>
+</body>
+</html>

@@ -54,6 +54,7 @@
   height: 314px; /* adjust as needed */
   border-radius: 16px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 /* LAST SEEN + MEAL LIST */
@@ -262,5 +263,3 @@
 .back-button {
   display: none !important;
 }
-
-

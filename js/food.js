@@ -16,7 +16,7 @@ async function loadFoodData() {
       return;
     }
 
-    // ✅ Set main content
+    // ✅ Populate content
     document.getElementById("food-title").textContent = food.name;
     document.getElementById("food-image").src = food.image;
     document.getElementById("food-time").textContent = `${food["time to cook"]} mins`;
@@ -51,7 +51,7 @@ async function loadFoodData() {
       benefitBox.appendChild(li);
     });
 
-    // ✅ Favorite logic with PUT
+    // ✅ Heart favorite logic (toggle)
     const favIcon = document.getElementById("fav-icon");
     let isFavorite = food.favorite === "1";
 
@@ -66,15 +66,14 @@ async function loadFoodData() {
       updateFavoriteUI();
 
       try {
-        await fetch(SHEET_URL, {
-          method: "PUT",
+        await fetch(`${SHEET_URL}/slug/${food.slug}`, {
+          method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            slug: food.slug,
             favorite: isFavorite ? "1" : "0"
           })
         });
-        console.log("✅ Favorite status updated in Google Sheets");
+        console.log("✅ Favorite status updated");
       } catch (error) {
         console.error("❌ Failed to update favorite:", error);
       }
