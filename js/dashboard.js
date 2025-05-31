@@ -159,3 +159,8 @@ function renderRemindersForDay(day) {
     container.appendChild(card);
   });
 }
+
+document.querySelector(".see-all-btn.center").addEventListener("click", () => {
+  window.location.href = "plan.html";
+});
+

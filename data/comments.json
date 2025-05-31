@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "username": "Lebron",
+      "avatar": "lebron.jpg",
+      "text": "This pasta is elite, definitely pre-game fuel!",
+      "likes": 1,
+      "dislikes": 0,
+      "replies": [
+        {
+          "id": 101,
+          "username": "Chaewon",
+          "avatar": "chaewon.jpeg",
+          "text": "True! Carbs are essential for energy."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "Kairi",
+      "avatar": "kairi.jpg",
+      "text": "I'd rather have miso soup after training!",
+      "likes": 0,
+      "dislikes": 0,
+      "replies": []
+    }
+  ]
+  

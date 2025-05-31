@@ -1,10 +1,9 @@
+/* Food Page Layout */
 .food-page {
   display: flex;
   gap: 24px;
 }
 
-
-/* LEFT COLUMN */
 .left-column {
   flex: 2;
   overflow-y: auto;
@@ -13,7 +12,6 @@
   flex-direction: column;
   gap: 24px;
 }
-
 
 #food-title {
   font-size: 28px;
@@ -36,15 +34,14 @@
   font-family: 'Baloo 2', cursive;
 }
 
-/* DISCUSSION */
+/* Discussion Section */
 .discussion-section {
-  background-color: #e9ffe7; /* light greenish background */
-  border: 1px solid #d0eacb; /* optional border */
+  background-color: #e9ffe7;
+  border: 1px solid #d0eacb;
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* soft shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
 
 .discussion-section h2 {
   font-size: 22px;
@@ -83,7 +80,6 @@
   background-color: #2e9000;
 }
 
-/* COMMENT + REPLY */
 .comment-avatar {
   width: 40px;
   height: 40px;
@@ -93,11 +89,14 @@
 .comment {
   display: flex;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
 }
 
 .reply {
-  margin-left: 52px;
+  margin-left: 60px;
+  padding-left: 16px;
+  border-left: 2px solid #cceccc;
 }
 
 .comment-content {
@@ -106,6 +105,7 @@
 
 .comment-content p {
   margin: 0;
+  line-height: 1.5;
 }
 
 .comment-content small {
@@ -113,7 +113,6 @@
   font-size: 12px;
 }
 
-/* ACTIONS (Like / Dislike / Reply) */
 .comment-actions {
   display: flex;
   gap: 16px;
@@ -135,17 +134,20 @@
   object-fit: contain;
 }
 
-/* REPLY BOX */
 .reply-btn {
   cursor: pointer;
   color: #38b000;
   font-weight: bold;
 }
 
+.reply-container {
+  margin-top: 16px;
+}
+
 .reply-box {
   display: flex;
   gap: 12px;
-  margin: 12px 0 0 52px;
+  margin: 16px 0 0 60px;
   align-items: flex-start;
 }
 
@@ -183,27 +185,25 @@
   color: #444;
 }
 
-/* RIGHT COLUMN */
 .right-column {
   flex: 1;
   position: sticky;
-  top: 100px; /* adjust to match your header height */
+  top: 100px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
 .image-wrapper {
   width: 100%;
-  max-width: 300px;       /* Keep it from growing too large */
+  max-width: 300px;
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   padding: 20px;
-  background: #e9ffe7; /* soft green/white blend */
+  background: #e9ffe7;
   border-radius: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* soft drop shadow */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,6 @@
   gap: 24px;
 }
 
-
 .meta-info {
   display: flex;
   align-items: center;
@@ -243,7 +242,6 @@
   object-fit: contain;
 }
 
-
 .fav-icon {
   width: 28px;
   height: 28px;
@@ -252,31 +250,6 @@
 
 .icon-fire {
   height: 30px !important;
-}
-
-
-.food-info {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.food-info img {
-  width: 40px; /* atau coba 32px jika ingin lebih besar */
-  height: 20px; /* tambahkan height agar proporsional */
-  margin-right: 8px;
-}
-
-.food-info span {
-  font-size: 24px;
-  font-weight: 600;
-  font-family: 'Baloo 2', cursive;
-}
-
-
-.food-benefits ul {
-  padding-left: 20px;
-  font-family: 'Baloo 2', cursive;
 }
 
 .store-section {
@@ -338,4 +311,3 @@
   font-size: 15px;
   color: #333;
 }
-

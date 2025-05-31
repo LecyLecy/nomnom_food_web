@@ -16,7 +16,6 @@
   <div class="page-wrapper">
     <div id="header-placeholder"></div>
     <div class="main-content">
-
       <!-- Day Selector -->
       <div class="day-selector">
         <img src="assets/left.svg" id="prev-day" class="day-arrow" alt="Previous Day">
@@ -26,9 +25,18 @@
 
       <!-- Meal Cards -->
       <div class="meal-plan-grid" id="plan-grid">
-        <!-- Breakfast / Lunch / Dinner cards will go here -->
+        <!-- JS will insert cards here -->
       </div>
+    </div>
+  </div>
 
+  <!-- Food Selection Popup -->
+  <div class="popup-overlay hidden" id="food-popup">
+    <div class="popup-content">
+      <h3>Select a food to add</h3>
+      <div class="popup-food-list" id="popup-food-list">
+        <!-- JS will populate food list here -->
+      </div>
     </div>
   </div>
 

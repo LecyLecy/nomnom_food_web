@@ -54,6 +54,9 @@
   
   .nav-item .icon {
     margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
   }
   
   .indicator {
